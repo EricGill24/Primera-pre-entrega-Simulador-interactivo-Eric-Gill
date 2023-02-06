@@ -10,8 +10,12 @@ let Productos = [{
     stock: 2
 } ]
 
+let stock1= 5
+let stock2=2
 let envio=500;
 let precioProducto=1500;
+let contador = stock1+stock2
+let gastoTotal = "suma entre producto y envio"
 function sumar() {
 	precioProducto = 1500(
 		prompt('1500' + envio )
@@ -30,7 +34,7 @@ function sumar() {
 	}
 }
 
-function calcularTotal (precioProducto + envio) {
+function calcularTotal (precioProducto, envio) {
 	return gastoTotal + precioProducto;
 }
 
@@ -47,11 +51,11 @@ let carritovacio = 0
 let eliminarproducto = ("precioproducto", "envio")
 let resultado = precioProducto.shift
 document.write("carrito con envio")
-document.write("producto removido" = eliminarproducto)
-document.write("resultado" = carritovacio)
-while (¿Desea eliminar el producto?) {
-	if (respuesta == si) {
-		borrarProducto = prompt("Eliminar Remera/Buzo");
+//document.write("producto removido" = eliminarproducto)
+//document.write("resultado" = carritovacio)
+let respuesta=prompt("¿Desea eliminar el preducto?")
+	if (respuesta == "si") {
+		borrarProducto = alert("Eliminar Remera/Buzo");
 		find(producto => producto === borrarProducto); 
 		if (eliminarproducto) { 
 			alert("Producto a eliminar");
@@ -59,7 +63,6 @@ while (¿Desea eliminar el producto?) {
 			preguntar = false;
 		} else {
 			alert("No se encontro el producto que desea eliminar");
-			respuesta = parseInt(prompt("Desea eliminar un producto \n\n1- Sí \n2- No."));
+		respuesta = parseInt(prompt("Desea eliminar un producto \n\n1- Sí \n2- No."));
 		}
 	}
-}
