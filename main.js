@@ -10,12 +10,10 @@ let Productos = [{
     stock: 2
 } ]
 
-let stock1= 5
-let stock2=2
 let envio=500;
 let precioProducto=1500;
-let contador = stock1+stock2
-let gastoTotal = "suma entre producto y envio"
+let contador = 0
+let gastoTotal = 0
 function sumar() {
 	precioProducto = 1500(
 		prompt('1500' + envio )
@@ -53,15 +51,16 @@ let resultado = precioProducto.shift
 document.write("carrito con envio")
 //document.write("producto removido" = eliminarproducto)
 //document.write("resultado" = carritovacio)
-let respuesta=prompt("¿Desea eliminar el preducto?")
-	if (respuesta == "si") {
-		borrarProducto = alert("Eliminar Remera/Buzo");
+let respuesta = prompt("¿Desea eliminar el preducto?")
+	if (respuesta === "si", "SI", "Si") {
+		borrarProducto = alert("Eliminar Buzo/Remera");
 		find(producto => producto === borrarProducto); 
 		if (eliminarproducto) { 
-			alert("Producto a eliminar");
+			alert("Producto eliminado");
 			(producto => producto == eliminarProducto);
 			preguntar = false;
-		} else {
+		} 
+		else {
 			alert("No se encontro el producto que desea eliminar");
 		respuesta = parseInt(prompt("Desea eliminar un producto \n\n1- Sí \n2- No."));
 		}
