@@ -48,17 +48,19 @@ mostrarTotal(2000);
 let carritovacio = 0
 let eliminarproducto = ("precioproducto", "envio")
 let resultado = precioProducto.shift
-document.write("carrito con envio")
-//document.write("producto removido" = eliminarproducto)
-//document.write("resultado" = carritovacio)
+document.write("Carrito con envio")
+
+
 let respuesta = prompt("¿Desea eliminar el preducto?")
 	if (respuesta === "si", "SI", "Si") {
 		borrarProducto = alert("Eliminar Buzo/Remera");
 		find(producto => producto === borrarProducto); 
+		document.write("producto removido");
 		if (eliminarproducto) { 
 			alert("Producto eliminado");
 			(producto => producto == eliminarProducto);
 			preguntar = false;
+			
 		} 
 		else {
 			alert("No se encontro el producto que desea eliminar");
